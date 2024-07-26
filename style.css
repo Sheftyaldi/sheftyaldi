@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: courier, Helvetica;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+}
+
+.wrapper {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #c9dabf;
+  border-radius: 10px;
+}
+
+.wrapper #profil {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  border: none;
+  background-color: brown;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.text-center {
+  text-align: center;
+  margin: 8px auto;
+}
+
+.text-center h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text-job {
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+/* pembuka View */
+
+.pagging {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pagging a {
+  color: #ffffff;
+}
+
+.pagging .view {
+  height: 80px;
+  width: 40%;
+  margin: 20px;
+  background-color: darkgreen;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 2px 0 10px gray;
+}
+
+.view img {
+  height: 80px;
+  width: 80px;
+  background-color: deeppink;
+  border-radius: 50px;
+}
+
+.view h2 {
+  display: block;
+  font-size: 40px;
+  font-family: "comic sans ms";
+  font-weight: bold;
+  margin: auto;
+}
+
+.view.biru {
+  background-color: #03346e;
+}
+
+.view.biru:hover {
+  background-color: #052a57;
+}
+.view.ping {
+  background-color: #ef588f;
+}
+
+.view.ping:hover {
+  background-color: #ad2758;
+}
+
+.view.hitam {
+  background-color: black;
+}
+
+.view.hitam:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.view.hijau {
+  background-color: #399918;
+}
+
+.view.hijau:hover {
+  background-color: #2c8b0c;
+}
+
+.view.merah {
+  background-color: #d30000;
+}
+
+.view.merah:hover {
+  background-color: #8c0000;
+}
+
+/* RESPONSIF */
+
+@media screen and (max-width: 998px) {
+  .view h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .pagging {
+    width: 100%;
+  }
+  .pagging .view {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .pagging .view {
+    display: inline-block;
+    height: 50px;
+    width: 80%;
+    margin-bottom: 8px;
+  }
+
+  .view img {
+    float: left;
+    height: 50px;
+    width: 50px;
+  }
+  .view h2 {
+    display: block;
+    line-height: 50px;
+    text-align: center;
+  }
+}
