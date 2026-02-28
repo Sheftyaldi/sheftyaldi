@@ -1,49 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Sosmed</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Sheftyaldi Rahman — Links</title>
+    <meta name="description" content="Portal link sosial media dan profil Sheftyaldi Rahman — Student, Web Developer, Tech Enthusiast." />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      /* Subtle float animation for the profile image */
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+      .animate-float { animation: float 3s ease-in-out infinite; }
+    </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <img src="assets/profile4.jpg" alt="" id="profil" />
-        <div class="text-center">
-          <h2>Sheftyaldi Rahman</h2>
-          <h3 class="text-job">Front End Developer</h3>
-          <p>
-            Selamat datang di mini website saya, jangan lupa follow untuk
-            berbagi informasi lainnya
-          </p>
-        </div>
 
-        <!-- BAGIAN VIEW LINK -->
+  <body class="min-h-screen bg-gradient-to-br from-slate-50 via-gray-100 to-slate-200 font-sans text-gray-800 flex items-center justify-center px-4 py-10">
 
-        <div class="pagging">
-          <a href="https://www.linkedin.com/in/sheftyaldi-rahman" target="_blank" class="view biru">
-            <img src="assets/linkedln.png" alt="" />
-            <h2 class="text-title">Linkedln</h2>
-          </a>
-          <a href="https://www.instagram.com/aldishft_?igsh=YXl2M2JjMHN1MjFt" target="_blank" class="view ping">
-            <img src="assets/instagram.jpeg" alt="" />
-            <h2 class="text-title">Instagram</h2>
-          </a>
-          <a href="https://www.tiktok.com/@doomz1525_?_t=8oLe2isM6cL&_r=1" target="_blank" class="view hitam">
-            <img src="assets/tiktok.png" alt="" />
-            <h2 class="text-title">TikTok</h2>
-          </a>
-          <a href="https://wa.me/+6287841111922" target="_blank" class="view hijau">
-            <img src="assets/whatsapp.png" alt="" />
-            <h2 class="text-title">WhatsApp</h2>
-          </a>
-          <a href="" target="_blank" class="view merah">
-            <img src="assets/youtube.png" alt="" />
-            <h2 class="text-title">You Tube Channel</h2>
-          </a>
-        </div>
+    <div class="w-full max-w-md">
+
+      <!-- ===== Profile Card ===== -->
+      <div class="text-center mb-8">
+        <img
+          src="assets/profile4.jpg"
+          alt="Sheftyaldi Rahman"
+          class="w-28 h-28 sm:w-32 sm:h-32 rounded-full mx-auto object-cover ring-4 ring-white shadow-lg animate-float"
+        />
+        <h1 class="mt-4 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
+          Sheftyaldi Rahman
+        </h1>
+        <p class="mt-1 text-sm sm:text-base text-gray-500 font-medium">
+          Student · Web Developer · Tech Enthusiast
+        </p>
       </div>
+
+      <!-- ===== Links ===== -->
+      <div class="flex flex-col gap-3">
+
+        <!-- 🔗 Google Brand Ambassador (TOP) -->
+        <a
+          href="#"
+          target="_blank"
+          id="link-google-ba"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-blue-300 transition-all duration-200"
+        >
+          <!-- Google "G" icon -->
+          <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 via-red-400 to-yellow-400 text-white font-bold text-lg shadow">
+            G
+          </span>
+          <div class="flex-1 min-w-0">
+            <span class="block text-sm font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">Google Brand Ambassador</span>
+            <span class="block text-xs text-gray-400">Daftar melalui link ini</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/sheftyaldi-rahman"
+          target="_blank"
+          id="link-linkedin"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-blue-700/30 transition-all duration-200"
+        >
+          <img src="assets/linkedln.png" alt="LinkedIn" class="w-10 h-10 rounded-xl object-cover shadow" />
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-[#0077B5] transition-colors">LinkedIn</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-[#0077B5] transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/Sheftyaldi"
+          target="_blank"
+          id="link-github"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-gray-400/50 transition-all duration-200"
+        >
+          <span class="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-xl bg-gray-900 text-white shadow">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-1.97c-3.2.7-3.87-1.54-3.87-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.7 1.25 3.36.96.1-.74.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.94 10.94 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.24 2.76.12 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </span>
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">GitHub</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/aldishf_"
+          target="_blank"
+          id="link-instagram"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-pink-300 transition-all duration-200"
+        >
+          <img src="assets/instagram.jpeg" alt="Instagram" class="w-10 h-10 rounded-xl object-cover shadow" />
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-pink-500 transition-colors">Instagram</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-pink-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- TikTok -->
+        <a
+          href="https://www.tiktok.com/@aldishf_?is_from_webapp=1&sender_device=pc"
+          target="_blank"
+          id="link-tiktok"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-gray-400/50 transition-all duration-200"
+        >
+          <img src="assets/tiktok.png" alt="TikTok" class="w-10 h-10 rounded-xl object-cover shadow" />
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-gray-900 transition-colors">TikTok</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-gray-600 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <!-- <a
+          href="https://wa.me/+6287841111922"
+          target="_blank"
+          id="link-whatsapp"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-green-300 transition-all duration-200"
+        >
+          <img src="assets/whatsapp.png" alt="WhatsApp" class="w-10 h-10 rounded-xl object-cover shadow" />
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-green-600 transition-colors">WhatsApp</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-green-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a> -->
+
+        <!-- YouTube -->
+        <!-- <a
+          href="#"
+          target="_blank"
+          id="link-youtube"
+          class="group flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-white shadow-sm border border-gray-200
+                 hover:shadow-md hover:scale-[1.03] hover:border-red-300 transition-all duration-200"
+        >
+          <img src="assets/youtube.png" alt="YouTube" class="w-10 h-10 rounded-xl object-cover shadow" />
+          <span class="flex-1 text-sm font-semibold text-gray-800 group-hover:text-red-600 transition-colors">YouTube Channel</span>
+          <svg class="w-4 h-4 text-gray-300 group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+        </a> -->
+
+      </div>
+
+      <!-- ===== Footer ===== -->
+      <footer class="mt-10 text-center text-xs text-gray-400">
+        &copy; 2026 Sheftyaldi Rahman
+      </footer>
+
     </div>
+
   </body>
 </html>
